@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+.container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 35rem);
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  justify-self: center;
+  grid-row: 1;
+}
+
+.header-text {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #ffffffCC;
+  align-self: center;
+  padding: 3rem;
+}
+
+.production-text {
+  grid-column: 1;
+}
+
+.movie-frame {
+  grid-column: 2 / span 2;
+  width: 100%;
+  height: auto;
+}
+
+.poster-image {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+  height: auto;
+}
+
+.inspiration {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.reviews {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/*** ----- typography ----- ***/
+
+h1 {
+  color: #006EA7;
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 7rem;
+}
+
+h2 {
+  color: #006EA7;
+  font-size: 2.5rem;
+  line-height: 7rem;
+}
+
+h3 {
+  color: grey;
+  font-size: 1.2rem;
+  line-height: 5rem;
+}
